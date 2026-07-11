@@ -1,81 +1,96 @@
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --primary-color: #0b4f6c;
+    --secondary-color: #01baef;
+    --accent1-color: #333333;
+    --accent2-color: #ffffff;
+    --heading-font: Arial, sans-serif;
+    --body-font: Verdana, sans-serif;
+}
+
+* {
     margin: 0;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
-    background-color: #004d66;
-    padding: 20px;
 }
 
-header img {
-    width: 120px;
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #ffcc00;
-}
-
-/* Hero section */
 .hero {
     position: relative;
 }
 
-.hero > img {
+.hero img {
+    display: block;
     width: 100%;
     height: auto;
 }
 
 .hero h1 {
     position: absolute;
-    top: 30px;
+    top: 20px;
     width: 100%;
+    padding: 16px;
     text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
     color: white;
-    font-size: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
-article {
-    display: flex;
-    align-items: center;
-    padding: 20px;
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
 }
 
-article img {
-    width: 200px;
-    margin-right: 20px;
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
 }
 
-/* Sections */
-section {
-    padding: 20px;
-}
-
-/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #004d66;
-    color: white;
-    padding: 20px;
 }
 
-.socialmedia img {
-    width: 40px;
-    margin: 5px;
+.socialmedia a {
+    text-decoration: none;
 }
