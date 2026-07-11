@@ -25,6 +25,25 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+main {
+    background-color: var(--accent2-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -37,12 +56,6 @@ section,
 article {
     margin: 16px;
     padding: 8px;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
 }
 
 nav {
@@ -68,7 +81,7 @@ nav {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--accent2-color);
 }
 
 .hero article {
@@ -76,19 +89,13 @@ nav {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 15px;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .socialmedia a {
