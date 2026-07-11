@@ -1,0 +1,81 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d66;
+    padding: 20px;
+}
+
+header img {
+    width: 120px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+article {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+article img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d66;
+    color: white;
+    padding: 20px;
+}
+
+.socialmedia img {
+    width: 40px;
+    margin: 5px;
+}
